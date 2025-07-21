@@ -1,0 +1,353 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --color-primary: #121212;
+    --color-secondary: #1E1E1E;
+    --color-thirty: #1A1A1A;
+    --color-fontcard: #EAEAEA;
+}
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: var(--color-primary);
+    color: var(--color-fontcard);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+
+.app-container{
+    display: flex;
+    min-height: 100vh;
+}
+
+
+.sidebar{
+    width: 280px;
+    padding: 2rem 1.5rem;
+    background-color: var(--color-thirty);
+    border-right: 1px solid #2A2A2A;
+    position: fixed;
+    height: 100vh;
+    overflow-y: auto;
+    z-index: 100;
+    transition: transform 0.3s ease;
+}
+.sidebar-header{
+    border-bottom: 1px solid #2A2A2A;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+}
+.sidebar-header .logo{
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+.sidebar-header .logo-subtitle{
+    font-size: 14px;
+    font-weight: 400;
+    color: #888888;
+}
+.nav{
+    display: block;
+}
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+}
+.nav-item{
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+    color: #888888;
+    font-weight: 500;
+    padding: 0.75rem 1rem;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.2 ease, transform 0.2 ease;
+}
+.nav-icon{
+    font-size: 20px;
+    margin-right: 0.5rem;
+}
+.nav-text{
+    font-size: 14px;
+    font-weight: 400;
+}
+.nav-link:hover{
+    color: var(--color-fontcard);
+    background-color: #3C3C3C;
+    transform: scale(1.1);  
+}
+
+
+.header{
+    display: block;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+    min-height: 100vh;
+    flex: 1;
+}
+.main-header{
+    position: sticky;
+    padding: 1.5rem 2rem;
+    background-color: var(--color-thirty);
+    border-bottom: 1px solid #2A2A2A;
+    top: 0;
+    z-index: 50;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.page-title{
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+
+.content-area{
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 32px;
+}
+.task-form{ 
+    padding: 24px;
+    background-color: #1A1A1A;
+    border: 1px solid #2A2A2A;
+    border-radius: 15px;
+
+}
+.form-group{
+    display: flex;
+    align-items: center;
+}
+.task-input{
+    padding: 14px 16px;
+    text-decoration: none;
+    color: var(--color-fontcard);
+    background-color: #2A2A2A;
+    border: 1px solid #3a3a3a;
+    border-radius: 15px;
+    flex: 1 1 0%;
+}
+.btn-primary, .btn-secondary{
+    display: flex;
+    padding: 14px 16px;
+    font-weight: 500;
+    border-radius: 10px;
+    color: var(--color-fontcard);
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    transition: 0.2s;
+    cursor: pointer;
+    background-color: #2A2A2A;
+    text-decoration: none;
+    gap: 0.5rem;
+}
+.btn-primary{
+    background-color: #3a3a3a;
+    margin-left: 15px;
+}
+.btn-primary:hover{
+    background-color: #4a4a4a;
+}
+.btn-secondary{
+    background-color: rgb(42, 42, 42);
+    color: rgb(136, 136, 136);
+    border: 1px solid #3C3C3C;
+}
+.btn-secondary:hover{
+    background-color: #3a3a3a;
+    color: var(--color-fontcard);
+}
+.task-form-container{
+    margin-bottom: 2rem;
+}
+
+
+.task-list-container{
+    background-color: #1A1A1A;
+    border: 1px solid rgb(42, 42, 42);
+    border-radius: 12px;
+    overflow: hidden;
+}
+.task-list{
+    max-height: 60vh;
+    overflow-y: auto;
+}
+.task-card {
+    display: flex;
+    align-items: center;
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid rgb(42, 42, 42);
+    animation: 0.3s deslizar ease forwards;
+}
+.task-card:hover{
+    background-color: #1F1F1F;
+}
+.task-checkbox{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+.task-checkbox input{
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-right: 10px;
+}
+
+.task-content{
+    flex: 1;
+}
+.task-title{
+    font-size: 14px;
+    margin-bottom: 2px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+.task-title.checked{
+    text-decoration: line-through;
+    color: #6A6E73;
+}
+.task-description{
+    font-size: 12px;
+    color: #4a4a4a;
+}
+
+.task-actions{
+    min-width: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.task-action-btn{
+    width: 32px;
+    height: 32px;
+    font-size: 18px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.2 ease, transform 0.2 ease;
+}
+.task-action-btn:hover{
+   background-color: #2A2A2A; 
+   transform: scale(1.1);
+}
+
+
+@media(max-width: 320px){
+    .sidebar {
+        width: 220px;
+        overflow: hidden;
+    }
+    .main-content{
+        margin-left: 220px;
+    }
+    .nav-list{
+        overflow-x: scroll;
+    }
+    .page-title{
+        font-size: 1.5rem;
+    }
+}
+@media(max-width: 720px){
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 0.5rem 1.5rem;
+        transform: translateY(0);
+        animation: dropdown 0.3s ease forwards;
+    }
+    .sidebar-header{
+        margin: 0;
+    }
+    .nav-list{
+        flex-direction: row;
+        height: min-content;
+        margin-top: 10px;
+    }
+    .main-content{
+        margin: 0;
+        margin-top: 179px;
+    }
+
+    .task-form{
+        padding: 16px;
+    }
+    .form-group{
+        flex-direction: column;
+    }
+    .task-input{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .btn-primary{
+        display: flex;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media(max-width: 1024px){
+    .page-title{
+        font-size: 1.5rem;
+        transition: 0.3s ease;
+    }
+    .btn-secondary{
+        padding: 10px 12px;
+    }
+
+}
+
+.task-input,
+.btn-primary,
+.task-card,
+.nav-link {
+  transition: all 0.3s ease;
+}
+
+
+@keyframes deslizar {
+    from {
+        opacity: 0;
+        transform: scale(0.97);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes dropdown {
+    from{
+        transform: translateY(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
