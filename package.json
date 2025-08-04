@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/gustapaixdev/jobtrek/issues"
   },
-  "homepage": "https://github.com/gustapaixdev/jobtrek#readme"
+  "homepage": "https://github.com/gustapaixdev/jobtrek#readme",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
 }
