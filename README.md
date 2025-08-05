@@ -40,7 +40,7 @@ npm start
 
 ## 💻 Deploy
 
-🔗 [Acesse o JobTrek no Netlify](https://trekdo.netlify.app/)
+🔗 [Acesse o Trekdo no Netlify](https://trekdo.netlify.app/)
 
 ## Roadmap
 
@@ -56,7 +56,7 @@ npm start
 
 ## 🪪 Licença
 
-Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://github.com/gustapaixdev/jobtrek/blob/main/LICENSE) para mais detalhes.
+Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https://github.com/gustapaixdev/Trekdo/blob/main/LICENSE) para mais detalhes.
 
 
 ## 👤 Autor
