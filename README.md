@@ -5,7 +5,7 @@
 
 
 ## 📝 Descrição
-O **JobTrek** é um projeto em desenvolvimento criado para ajudar pessoas comuns e profissionais a organizarem seu dia a dia com mais eficiência. Ele utiliza a **Matriz de Eisenhower** como base para a priorização de tarefas, oferecendo uma interface intuitiva e leve.
+O **Trekdo** é um projeto em desenvolvimento criado para ajudar pessoas comuns e profissionais a organizarem seu dia a dia com mais eficiência. Ele utiliza a **Matriz de Eisenhower** como base para a priorização de tarefas, oferecendo uma interface intuitiva e leve.
 
 ## 🔨 Funcionalidades do Projeto
 - `Funcionalidade 1`: Priorizar tarefas com base na Matriz de Eisenhower
@@ -13,7 +13,7 @@ O **JobTrek** é um projeto em desenvolvimento criado para ajudar pessoas comuns
 - `Funcionalidade 3`: Visualizar relatórios intuitivos sobre o andamento das tarefas
 
 ## 👨‍💻 Tecnologias Utilizadas
-- `JavaScript (ES2021)` - Linguagem Principal
+- `JavaScript` - Linguagem Principal
 - `HTML5` e `CSS3` - Estrutura e estilo da interface
 - `Padrão MVC` - Organização do Código
 - `LocalStorage` - Armazenamento local de dados
@@ -23,7 +23,7 @@ O **JobTrek** é um projeto em desenvolvimento criado para ajudar pessoas comuns
 ### ✅ 1. Clone o repositório
 
 ```bash
-git clone https://github.com/gustapaixdev/jobtrek.git
+git clone https://github.com/gustapaixdev/Trekdo.git
 ```
 
 ### ✅ 2. Instale as dependências
@@ -40,7 +40,7 @@ npm start
 
 ## 💻 Deploy
 
-🔗 [Acesse o JobTrek no Netlify](https://jobtrek.netlify.app/)
+🔗 [Acesse o JobTrek no Netlify](https://trekdo.netlify.app/)
 
 ## Roadmap
 
@@ -64,4 +64,4 @@ Este projeto está licenciado sob a Licença MIT. Veja o arquivo [LICENSE](https
 | ![avatar](https://avatars.githubusercontent.com/u/167583994?s=400&u=8e74ea5b2468ee3a38b74637ea482cf889a83fa7&v=4) |
 |:--:|
 | **Gustavo Paixão Silva** |
-| [GitHub](https://github.com/gustapaixdev) • [LinkedIn](www.linkedin.com/in/gustavo-paixão-b0384520a) |
+| [GitHub](https://github.com/gustapaixdev) • [LinkedIn](https://www.linkedin.com/in/gustavo-paixão-b0384520a) |
